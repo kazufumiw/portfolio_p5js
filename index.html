@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+     <!-- Required meta tags -->
+    <meta name="description" content="kzfmのp5.jsポートフォリオサイトです。">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>kzfm | Creative Coding</title>
+    <link rel="shortcut icon" href="./icon.png">
+  </head>
+  <body>
+    <nav style="box-shadow: 0 0 0px gray;"  class="navbar navbar-expand-lg navbar-light bg-white fixed-top" style="background-color:#ffffff;">
+      <a class="navbar-brand" href="./index.html" style="color: #0B0B6F;">kzfm | Creative Coding</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#works">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/kazufumiw" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="header_spacer" style="height: 72px; width: 100%"></div>
+
+    <div class="jumbotron" id="about" style="margin: 0px;">
+      <h1 class="display-4">About</h1>
+      <p class="lead" style="font-size: 1rem;">SIerでプリセールスエンジニアをする一方で、趣味でコーディングをしています。
+        <br>
+        creative codingについては2019年から時間のあるときに取り組んでいます。
+        <br>
+        HTML/CSSの勉強の一環でこのWebサイトを作ったので、ここには作ったp5.jsのスケッチを置いておこうと思います。</p>
+      <hr class="my-4">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-10">
+            <h2 class="display-5">Interest</h2>
+          </div>
+          <div class="col-2">
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapse_1" role="button" aria-expanded="false" aria-controls="collapse_1" style="margin-bottom:20px; text-align:left;"><i class="fas fa-plus"></i></a>
+          </div>
+        </div>
+        <hr class="my-4" style="margin-top:0px!important">
+        <div class="row">
+          <div class="col-12">
+            <div class="collapse" id="collapse_1">
+              <!--<h2 class="display-5"><b>Interest</b></h2>-->
+              <p>数値流体力学 / 軌道力学<br><i class="fas fa-arrow-right"></i> 大学時代の研究テーマ。</p>
+              <p>OSS / データサイエンス / 機械学習 / メインフレーム<br><i class="fas fa-arrow-right"></i> 業務に関連するもの。</p>
+              <p>写真 / creative coding / 将棋<br><i class="fas fa-arrow-right"></i> 大学時代の写真部活動と趣味。</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <h2 class="display-5">Programing</h2>
+          </div>
+          <div class="col-2">
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapse_2" role="button" aria-expanded="false" aria-controls="collapse_1" style="margin-bottom:20px; text-align:left;"><i class="fas fa-plus"></i></a>
+          </div>
+        </div>
+        <hr class="my-4" style="margin-top:0px!important">
+        <div class="row">
+          <div class="col-12">
+            <div class="collapse" id="collapse_2">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-4">
+                    <p><b>HTML/CSS</b></p>
+                  </div>
+                  <div class="col-8">
+                    <p>Webアプリ作成に興味があるので2019年5月から勉強中。このサイトも勉強の一環としてHTML/CSS+Bootstrap4で作成。</p>
+                  </div>
+                </div>
+                <div class="row" style="margin-top:20px;">
+                  <div class="col-4">
+                    <p><b>JavaScript</b></p>
+                  </div>
+                  <div class="col-8">
+                    <p>p5.jsで使用する程度。Webアプリ製作のため勉強予定。</p>
+                  </div>
+                </div>
+                <div class="row" style="margin-top:20px;">
+                  <div class="col-4">
+                    <p><b>Fortran</b></p>
+                  </div>
+                  <div class="col-8">
+                    <p>学部時代のプログラミング講義で使用。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row" style="margin-top:20px;">
+                  <div class="col-4">
+                    <p><b>C/C++</b></p>
+                  </div>
+                  <div class="col-8">
+                    <p>学部4年の研究(数値流体力学, OpenFOAM)と大学院時代の研究(軌道計算)で数値計算のため3年程度使用。</p>
+                  </div>
+                </div>
+                <div class="row" style="margin-top:20px;">
+                  <div class="col-4">
+                    <p><b>Python2/3</b></p>
+                  </div>
+                  <div class="col-8">
+                    <p>大学院時代の研究で画像処理のため使用。現在も業務効率化ツールやシミュレーションツールを作成。</p>
+                  </div>
+                </div>
+                <div class="row" style="margin-top:20px;">
+                  <div class="col-4">
+                    <p><b>Shell Script(Bash)</b></p>
+                  </div>
+                  <div class="col-8">
+                    <p>研究で使用した演算サーバがLinux RedHatであったため、Shellのレイヤーでアプリ操作や処理を行いたいときに使用。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row" style="margin-top:20px;">
+                  <div class="col-4">
+                    <p><b>SQL</b></p>
+                  </div>
+                  <div class="col-8">
+                    <p>Master the Mainframe(プログラミングコンテスト)で使用。</p>
+                  </div>
+                </div>
+                <div class="row" style="margin-top:20px;">
+                  <div class="col-4">
+                    <p><b>Java</b></p>
+                  </div>
+                  <div class="col-8">
+                    <p>Master the Mainframe(プログラミングコンテスト)で使用。入社後の研修でも使用(入門レベル)。</p>
+                  </div>
+                </div>
+                <div class="row" style="margin-top:20px;">
+                  <div class="col-4">
+                    <p><b>Rexx</b></p>
+                  </div>
+                  <div class="col-8">
+                    <p>Master the Mainframe(プログラミングコンテスト)で使用。</p>
+                  </div>
+                </div>
+                <div class="row" style="margin-top:20px;">
+                  <div class="col-4">
+                    <p><b>JCL</b></p>
+                  </div>
+                  <div class="col-8">
+                    <p>Master the Mainframe(プログラミングコンテスト)で使用。実業務でも使用するので勉強中。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <h2 class="display-5">Biography</h2>
+          </div>
+          <div class="col-2">
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapse_3" role="button" aria-expanded="false" aria-controls="collapse_1" style="margin-bottom:20px; text-align:left;"><i class="fas fa-plus"></i></a>
+          </div>
+        </div>
+        <hr class="my-4" style="margin-top:0px!important">
+        <div class="row">
+          <div class="col-12">
+            <div class="collapse" id="collapse_3">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-4">
+                    <p>2008年</p>
+                  </div>
+                  <div class="col-8">
+                    <p>大分県立中津南高校入学</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <p>2012年</p>
+                  </div>
+                  <div class="col-8">
+                    <p>九州大学機械航空工学科入学</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <p>2016年</p>
+                  </div>
+                  <div class="col-8">
+                    <p>九州大学航空宇宙工学コース卒業</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <p>2018年</p>
+                  </div>
+                  <div class="col-8">
+                    <p>九州大学大学院航空宇宙工学専攻修了</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <p>2018年</p>
+                  </div>
+                  <div class="col-8">
+                    <p>SIerにてプリセールスエンジニアとして活動中</p>
+                  </div>
+                </div>
+              </div>
+              <!--<h2 class="display-5"><b>Interest</b></h2>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron" id="works" style="margin-top:2px; margin-bottom:0px; background: linear-gradient(180deg, #f9d0c8, #f9d0c8);">
+      <h1 class="display-4">Works</h1>
+      <hr class="my-4">
+      <!--
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-12">
+            <div class="card" style="width: 100%; background-color : transparent;" >
+              <a href="./sphere/index.html"><img class="card-img-top" style="text-align: center; border-radius: 50%;" src="./sphere.png" alt="Card image cap"></a>
+              <div class="card-body">
+                <p class="card-text" style="text-align: center;">Sketch#1</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="card" style="width: 100%;  background-color : transparent;">
+              <a href="phasedcolor/index.html"><img class="card-img-top" style="text-align: center;  border-radius: 50%;" src="./phasedcolor.png" alt="Card image cap"></a>
+              <div class="card-body">
+                <p class="card-text" style="text-align: center;">Sketch#2</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="card" style="width: 100%;  background-color : transparent;">
+              <a href="./phasedcolor2/index.html"><img class="card-img-top" style="text-align: center;  border-radius: 50%;" src="./phasedcolor_rough.png" alt="Card image cap"></a>
+              <div class="card-body">
+                <p class="card-text" style="text-align: center;">Sketch#3</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="card" style="width: 100%;  background-color : transparent;">
+              <a href="./structure/index.html"><img class="card-img-top" style="text-align: center; border-radius: 50%;" src="./structure.png" alt="Card image cap"></a>
+              <div class="card-body">
+                <p class="card-text" style="text-align: center;">Sketch#4(web camera)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-xs-12">
+            <div class="card" style="width: 100%;   background-color : transparent;" >
+              <a href="./colorparette/index.html"><img class="card-img-top" style="text-align: center; border-radius: 50%;" src="./colorparette.png" alt="Card image cap"></a>
+              <div class="card-body">
+                <p class="card-text" style="text-align: center;">sketch#5</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="card" style="width: 100%;  background-color : transparent;">
+              <a href="./colorball/index.html"><img class="card-img-top" style="text-align: center; border-radius: 50%;" src="./colorballs.png" alt="Card image cap"></a>
+              <div class="card-body">
+                <p class="card-text" style="text-align: center;">sketch#6</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-0">
+            <!--
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" style="text-align: center;" src="./top.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text" style="text-align: center;">Sphere</p>
+              </div>
+            </div>
+            -->
+          </div>
+          <div class="col-md-3 col-xs-0">
+            <!--
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" style="text-align: center;" src="./top.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text" style="text-align: center;">Sphere</p>
+              </div>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron" id="contact" style="margin-top: 2px; margin-bottom: 0px; background: linear-gradient(0deg, #b3d7e6, #f9d0c8);">
+      <h1 class="display-4">Contact</h1>
+      <p class="lead">SNSで繋がりましょう。</p>
+      <!--
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      -->
+    </div>
+
+    <div class="container-fluid" style="height: 100px; margin-top: 8px;">
+      <div class="row">
+        <div class="col">
+          <a href="https://www.facebook.com/kazufumi.watanabe.167"><i class="fab fa-facebook-square" style="font-size: 32pt; margin: 5px 10px;"></i></a>
+          <a href="https://www.linkedin.com/in/kazufumi-watanabe-a8822612b/"><i class="fab fa-linkedin" style="font-size: 32pt; margin: 5px 10px;"></i></a>
+          <a href="https://github.com/kazufumiw"><i class="fab fa-github-square" style="font-size: 32pt; margin: 5px 10px;"></i></a>
+          <a href="https://www.instagram.com/kazufumi_pht/?hl=ja"><i class="fab fa-instagram" style="font-size: 32pt; margin: 5px 10px;"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>&copy 2019 kzfm All rights reserved. <i class="fas fa-code"></i> with <i class="fas fa-heart" style="animation: anime2 1s alternate infinite; color: red;"></i>.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
