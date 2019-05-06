@@ -75,8 +75,6 @@ function draw() {
 		p.update();
 	}
 
-
-
 	for(var i = 0; i < pn; i++){
 		for(var j=i+1; j < pn; j++){
 			distance = Math.sqrt((p_array[i].x - p_array[j].x)**2 + (p_array[i].y - p_array[j].y)**2 + (p_array[i].z - p_array[j].z)**2)
